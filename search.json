@@ -1,0 +1,14 @@
+---
+layout: none
+---
+[{% assign all_pages = site.pages | where_exp: 'page', 'page.searchable == true' %}
+  {% for page in all_pages %}
+    {
+      "title"    : "{{ page.title | escape }}",
+      "category" : "{{ page.category }}",
+      "tags"     : "{{ page.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "date"     : "{{ post.updated_at }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

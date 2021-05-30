@@ -1,0 +1,6 @@
+- [Translations](#)
+  - [:uk: English](/)
+  - [Add translation](/contributing-doc-site/#translations)
+- [Theme](#)
+  - <a href="#" data-link-title="light">:sun_with_face: Light</a>
+  - <a href="#" data-link-title="dark">:waxing_crescent_moon: Dark</a>
